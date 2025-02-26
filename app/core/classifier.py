@@ -9,6 +9,8 @@ load_dotenv()
 
 api_key = os.getenv("OPENAI_KEY")
 
+print(api_key)
+
 if not api_key:
   raise ValueError("API KEY is missing, please check!")
 
