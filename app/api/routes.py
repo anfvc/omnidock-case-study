@@ -5,7 +5,7 @@ from app.core.classifier import classify_with_openai
 router = APIRouter()
 
 @router.post("/classify")
-def classify_produc(product: ProductInput):
+def classify_product(product: ProductInput):
   #Classifies an amazon product into an OTTO category:
 
   matched_category = classify_with_openai(product.title, product.description)
