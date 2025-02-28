@@ -10,4 +10,4 @@ app.include_router(router)
 
 @app.get("/")
 def read_root():
-  return {"message": "This is the Product Classification API!"}
+  return {"message": "Testing the API"}
